@@ -1,0 +1,7 @@
+<h1>All Albums</h1>
+
+<% unless @albums.nil? %>
+  <% @albums.all.each do |album| %>
+    <li> <%= album.name %> </li>
+  <% end %>
+<% end %>
